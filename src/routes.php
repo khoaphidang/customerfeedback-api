@@ -5,6 +5,7 @@ use Slim\Http\Response;
 
 // Routes
 $app->get('/init', function (Request $request, Response $response, array $args) {
+
     // Create table if it doesn't exists
     $this->logger->info("Creating table if it doesn't exist.");
     $createTableSQL = <<<EOD

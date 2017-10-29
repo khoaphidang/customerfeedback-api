@@ -18,7 +18,7 @@ $container['db'] = function ($c) {
 
     // Create database if it doesn't exist
     $createDatabaseSQL = <<<'EOD'
-    CREATE DATABASE IF NOT EXISTS`$settings['dbname']`;
+    CREATE DATABASE IF NOT EXISTS `'$settings['dbname']'`;
     CREATE USER '$settings['user']'@'$settings['host']' IDENTIFIED BY '$settings['pass']';
     GRANT ALL ON `$settings['dbname']`.* TO '$settings['user']'@'$settings['host']';
     FLUSH PRIVILEGES;"
