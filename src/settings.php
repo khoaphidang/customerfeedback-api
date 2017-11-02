@@ -6,10 +6,10 @@ return [
 
         // Database settings
         'db' => [
-            "host" => getenv('MYSQL_SERVER'),
+            "host" => getenv('khoaserverlessmysql.mysql.database.azure.com'),
             "dbname" => "crmdb",
-            "user" => getenv('MYSQL_USER'),
-            "pass" => getenv('MYSQL_PASSWORD')
+            "user" => getenv('khoaphidang@khoaserverlessmysql'),
+            "pass" => getenv('@123456a')
         ],
 
         // Renderer settings
